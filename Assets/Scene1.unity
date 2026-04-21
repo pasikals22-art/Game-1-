@@ -634,6 +634,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1207157725}
   - component: {fileID: 1207157724}
+  - component: {fileID: 1207157730}
+  - component: {fileID: 1207157729}
+  - component: {fileID: 1207157728}
+  - component: {fileID: 1207157727}
+  - component: {fileID: 1207157726}
   m_Layer: 0
   m_Name: 0012.png0001_0
   m_TagString: Untagged
@@ -708,12 +713,141 @@ Transform:
   m_GameObject: {fileID: 1207157723}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7078, y: 1.0245525, z: 0}
-  m_LocalScale: {x: -1.0133, y: 1, z: 1}
+  m_LocalPosition: {x: -1.868, y: 0.662, z: 0}
+  m_LocalScale: {x: -0.7953391, y: 0.7849, z: 0.7849}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1207157726
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207157723}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.47, y: 3.37}
+  m_Direction: 0
+--- !u!50 &1207157727
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207157723}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1207157728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207157723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c380dde0385b44dbcea11de9cb5098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShootTwoDirection
+  damage: 1
+  attackSpeed: 0.5
+  cooldown: 0.5
+  attackInput: 323
+  attackOffset: {fileID: 0}
+  myAnim: {fileID: 0}
+  projectile: {fileID: 0}
+  projectileSpeed: 5
+  liveTime: 10
+  infiniteAmmo: 1
+  destroyOtherProjectiles: 0
+  spreadshot: 0
+  numSpreadShots: 4
+  spreadWidth: 10
+  FollowsPlayer: 0
+  ShootsAllDirections: 0
+--- !u!114 &1207157729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207157723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfda27d7be5e734ba50aefe51a92d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 10
+  currentHealth: 0
+  immunityTime: 0.2
+  immunityVisible: 1
+  immortal: 0
+  sound: {fileID: 0}
+  soundVolume: 1
+  dropThings: 0
+  healthBar: 0
+  timeToDie: 0
+  deathCountsTowardGoal: 0
+  autosetLayerToEnemy: 1
+--- !u!114 &1207157730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207157723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37402b8a26ff634b952eca607f34fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttackManager
+  attacksEnabled: 1
 --- !u!1 &1306850587
 GameObject:
   m_ObjectHideFlags: 0
