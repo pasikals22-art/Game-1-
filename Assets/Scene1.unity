@@ -693,15 +693,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8809799233057525238, guid: 5fca62bf72f37d747bba5092ac3a94f0, type: 3}
       propertyPath: m_Size.x
-      value: 2.7675538
+      value: 17.199793
       objectReference: {fileID: 0}
     - target: {fileID: 8809799233057525238, guid: 5fca62bf72f37d747bba5092ac3a94f0, type: 3}
       propertyPath: m_Offset.x
-      value: -0.0064216256
+      value: 0.010140419
       objectReference: {fileID: 0}
     - target: {fileID: 8809799233057525238, guid: 5fca62bf72f37d747bba5092ac3a94f0, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 2.762141
+      value: 17.230158
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
