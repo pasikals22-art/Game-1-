@@ -42,7 +42,9 @@ public class PlatformerMovement : MonoBehaviour, IMove
                 a.SetFloat("VerticalSpeed", vertical); 
             } 
         } 
-        if (Mathf.Abs(horizontal) > 0) { lastHorizontal = horizontal; 
+        if (Mathf.Abs(horizontal) > 0) 
+        {
+            lastHorizontal = horizontal; 
         } 
         
         if (attackScripts.Length > 0) { 
