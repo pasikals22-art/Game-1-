@@ -138,9 +138,9 @@ GameObject:
   - component: {fileID: 150713796}
   - component: {fileID: 150713809}
   - component: {fileID: 150713808}
-  - component: {fileID: 150713807}
   - component: {fileID: 150713806}
   - component: {fileID: 150713810}
+  - component: {fileID: 150713811}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -196,7 +196,7 @@ MonoBehaviour:
   wallDetectionDistance: 0.05
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 9
 --- !u!114 &150713799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,32 +404,6 @@ MonoBehaviour:
   respawnTime: 0
   reloadScene: 1
   stopTime: 0
---- !u!114 &150713807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150713790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eecf34eec5c2a14cbecd8953b2d8278, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShootForward
-  damage: 1
-  attackSpeed: 0.5
-  cooldown: 0.5
-  attackInput: 324
-  attackOffset: {fileID: 0}
-  myAnim: {fileID: 0}
-  projectile: {fileID: 7728412902767994620, guid: 0db777469c91a34428baf975c0a088a8, type: 3}
-  projectileSpeed: 5
-  liveTime: 10
-  infiniteAmmo: 1
-  destroyOtherProjectiles: 0
-  spreadshot: 0
-  numSpreadShots: 4
-  spreadWidth: 10
 --- !u!114 &150713808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,6 +477,34 @@ MonoBehaviour:
   TargetObject: {fileID: 0}
   DisableAtStart: 0
   completed: 0
+--- !u!114 &150713811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150713790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c380dde0385b44dbcea11de9cb5098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShootTwoDirection
+  damage: 1
+  attackSpeed: 0.5
+  cooldown: 0.5
+  attackInput: 323
+  attackOffset: {fileID: 1097806669}
+  myAnim: {fileID: 0}
+  projectile: {fileID: 7728412902767994620, guid: 0db777469c91a34428baf975c0a088a8, type: 3}
+  projectileSpeed: 5
+  liveTime: 10
+  infiniteAmmo: 1
+  destroyOtherProjectiles: 0
+  spreadshot: 0
+  numSpreadShots: 4
+  spreadWidth: 10
+  FollowsPlayer: 0
+  ShootsAllDirections: 0
 --- !u!1001 &342754374
 PrefabInstance:
   m_ObjectHideFlags: 0
