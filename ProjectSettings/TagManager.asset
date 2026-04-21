@@ -7,14 +7,15 @@ TagManager:
   - Collectible
   - Powerup
   - Platform
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Platform
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
