@@ -9,6 +9,7 @@ public class PlatformerMovement : MonoBehaviour, IMove
     Rigidbody2D rb;
     [SerializeField] Animator[] animators;
 
+
     IAttack<Health>[] attackScripts;
 
     [field: SerializeField]
@@ -19,6 +20,8 @@ public class PlatformerMovement : MonoBehaviour, IMove
         attackScripts = GetComponents<IAttack<Health>>();
         rb = GetComponent<Rigidbody2D>();
     }
+
+    
 
 
     public void Move(Vector2 direction)
@@ -33,6 +36,8 @@ public class PlatformerMovement : MonoBehaviour, IMove
 
         UpdateAnimations(rb.linearVelocity.normalized.x, rb.linearVelocity.normalized.y); //jump animations set in jump script
     }
+
+
 
     public void UpdateAnimations(float horizontal, float vertical) {
         if (animators.Length > 0){
