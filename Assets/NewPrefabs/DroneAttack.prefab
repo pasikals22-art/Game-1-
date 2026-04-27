@@ -228,4 +228,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TopDownPointMotor
   animators: []
-  <speed>k__BackingField: 3
+  <speed>k__BackingField: 10
