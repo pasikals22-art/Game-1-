@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4760224472597348103}
   - component: {fileID: 1876392224439372265}
   - component: {fileID: 7099067643639385656}
+  - component: {fileID: 2645856580787169928}
   m_Layer: 0
   m_Name: DroneAttack
   m_TagString: Untagged
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6135626727781893226, guid: 518ee804899fd114380dc5b538849c7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -203,4 +204,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TopDownMotor
   animators: []
-  <speed>k__BackingField: 10
+  <speed>k__BackingField: 3
+--- !u!114 &2645856580787169928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871174029164266525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfda27d7be5e734ba50aefe51a92d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 3
+  currentHealth: 0
+  immunityTime: 0.2
+  immunityVisible: 1
+  immortal: 0
+  sound: {fileID: 0}
+  soundVolume: 1
+  dropThings: 0
+  healthBar: 0
+  timeToDie: 0
+  deathCountsTowardGoal: 0
+  autosetLayerToEnemy: 1
