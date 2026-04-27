@@ -16,6 +16,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpreadShotEnemy Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4634137441563940167, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.108094916
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634137441563940167, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9169811
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634137441563940167, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_Color.r
+      value: 0.095158316
+      objectReference: {fileID: 0}
     - target: {fileID: 9121253588797112947, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.52
