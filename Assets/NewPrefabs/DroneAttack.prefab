@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 1072699762031268825}
   - component: {fileID: 543960311390673093}
   - component: {fileID: 8491536482554487240}
-  - component: {fileID: 3767646540276557037}
   - component: {fileID: 4760224472597348103}
   - component: {fileID: 1876392224439372265}
-  - component: {fileID: 7099067643639385656}
   - component: {fileID: 2645856580787169928}
+  - component: {fileID: 863936822577669436}
+  - component: {fileID: 5146884309259665465}
   m_Layer: 0
   m_Name: DroneAttack
   m_TagString: Untagged
@@ -132,23 +132,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.009420818}
   m_Radius: 0.15347517
---- !u!114 &3767646540276557037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7871174029164266525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ff421bccc60c46ee8d8434cfa104732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TargetChaser
-  autoSetPlayer: 1
-  target: {fileID: 0}
-  agroDistance: 10
-  stoppingDistance: 0.1
-  minimumDistance: 0.05
 --- !u!114 &4760224472597348103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,22 +172,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7099067643639385656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7871174029164266525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf4886be07040ae4eada82e2b1607730, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TopDownMotor
-  animators: []
-  <speed>k__BackingField: 3
 --- !u!114 &2645856580787169928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,3 +198,34 @@ MonoBehaviour:
   timeToDie: 0
   deathCountsTowardGoal: 0
   autosetLayerToEnemy: 1
+--- !u!114 &863936822577669436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871174029164266525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff421bccc60c46ee8d8434cfa104732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetChaser
+  autoSetPlayer: 1
+  target: {fileID: 0}
+  agroDistance: 10
+  stoppingDistance: 0.1
+  minimumDistance: 0.05
+--- !u!114 &5146884309259665465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871174029164266525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a187a433d73aa1419f8f65e3b98e077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TopDownPointMotor
+  animators: []
+  <speed>k__BackingField: 10
