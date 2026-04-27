@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 546994643561149426}
   - component: {fileID: 7593353908218964490}
   - component: {fileID: 5483315160362763012}
+  - component: {fileID: 1691443523611162379}
   m_Layer: 7
   m_Name: EnemyShoot
   m_TagString: Enemy
@@ -161,6 +162,7 @@ MonoBehaviour:
   spreadWidth: 10
   FollowsPlayer: 1
   ShootsAllDirections: 0
+  attackRange: 0
 --- !u!50 &7593353908218964490
 Rigidbody2D:
   serializedVersion: 5
@@ -225,6 +227,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.47, y: 3.37}
   m_Direction: 0
+--- !u!114 &1691443523611162379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278055784048874721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fd4208a368c534b9e99d32157c31ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDrop
+  droppables:
+  - {fileID: 5022111123832074058, guid: d416994b5e075463b935c53fea453e98, type: 3}
+  guaranteed: 0
+  percentChanceForDrop: 20
+  sound: {fileID: 0}
+  soundVolume: 1
 --- !u!1 &5005351414501314889
 GameObject:
   m_ObjectHideFlags: 0

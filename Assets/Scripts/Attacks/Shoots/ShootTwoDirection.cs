@@ -2,9 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootTwoDirection : ShootFourDirection
+public class ShootTwoDirection : ShootFourDirection { 
+
+PlayerHealth player;
+
+public float attackRange;
+
+void Start()
 {
-    override public IEnumerator ExecuteAttack(float attackTime)
+    PlayerHealth[] checkForOnePlayer = FindObjectsOfType<PlayerHealth>();
+    if (checkForOnePlayer.Length > 1)
+    {
+        Debug.LogError("Multiple player health scripts found! Enemies will only target the first player found.");
+        player = checkForOnePlayer[0];
+    }
+    else if (checkForOnePlayer.Length == 0)
+    {
+            Debug.LogError(gameObject.name + ": No players found. Enemy will not attack");
+    }
+    else
+    {
+        player = checkForOnePlayer[0];
+    }
+}
+
+override public IEnumerator ExecuteAttack(float attackTime)
     {
         if (myAmmo)
         {
@@ -84,6 +106,10 @@ public class ShootTwoDirection : ShootFourDirection
 
     private IEnumerator NewMethod(Vector2 position, Direction direction, float delay)
     {
+        var distance = Vector2.Distance(position, player.transform.position);
+
+        if (distance > attackRange) yield break;
+
         yield return new WaitForSeconds(delay);
         // get projectile
         GameObject newProject = projectilePool.pullObject(position);

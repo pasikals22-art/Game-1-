@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4294001645854387821}
   - component: {fileID: 7388117320829521111}
-  - component: {fileID: 3728878879019517705}
   - component: {fileID: 6546432234488591382}
   m_Layer: 0
   m_Name: Falling Death
@@ -80,19 +79,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 10.335175, y: 0.37010622}
   m_EdgeRadius: 0
---- !u!114 &3728878879019517705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3506925778572032674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e37402b8a26ff634b952eca607f34fa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttackManager
-  attacksEnabled: 1
 --- !u!114 &6546432234488591382
 MonoBehaviour:
   m_ObjectHideFlags: 0
