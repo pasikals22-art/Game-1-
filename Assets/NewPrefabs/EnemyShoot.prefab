@@ -149,12 +149,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShootTwoDirection
   damage: 1
   attackSpeed: 1
-  cooldown: 0.5
+  cooldown: 2
   attackInput: 323
   attackOffset: {fileID: 322217254967425674}
   myAnim: {fileID: 0}
   projectile: {fileID: 7728412902767994620, guid: 0db777469c91a34428baf975c0a088a8, type: 3}
-  projectileSpeed: 5
+  projectileSpeed: 4
   liveTime: 10
   infiniteAmmo: 1
   destroyOtherProjectiles: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
   spreadWidth: 10
   FollowsPlayer: 1
   ShootsAllDirections: 0
-  attackRange: 0
+  attackRange: 7
 --- !u!50 &7593353908218964490
 Rigidbody2D:
   serializedVersion: 5
