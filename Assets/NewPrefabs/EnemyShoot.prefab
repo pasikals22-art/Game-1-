@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7593353908218964490}
   - component: {fileID: 5483315160362763012}
   - component: {fileID: 1691443523611162379}
+  - component: {fileID: 2911904652506325978}
   m_Layer: 7
   m_Name: EnemyShoot
   m_TagString: Enemy
@@ -129,7 +130,7 @@ MonoBehaviour:
   immortal: 0
   sound: {fileID: 0}
   soundVolume: 1
-  dropThings: 0
+  dropThings: 1
   healthBar: 0
   timeToDie: 0
   deathCountsTowardGoal: 0
@@ -189,7 +190,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!70 &5483315160362763012
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -245,6 +246,21 @@ MonoBehaviour:
   percentChanceForDrop: 20
   sound: {fileID: 0}
   soundVolume: 1
+--- !u!114 &2911904652506325978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278055784048874721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad35f6120bff3a43b7944767d2e221d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ContactAttack
+  damage: 1
+  onlyDamagePlayer: 1
+  disable: 0
 --- !u!1 &5005351414501314889
 GameObject:
   m_ObjectHideFlags: 0
