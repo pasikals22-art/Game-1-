@@ -9,7 +9,19 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 546994643561149426, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 546994643561149426, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: spreadshot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 546994643561149426, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: attackRange
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 546994643561149426, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: ShootsAllDirections
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3278055784048874721, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
