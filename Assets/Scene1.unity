@@ -4183,6 +4183,10 @@ PrefabInstance:
       propertyPath: cooldown
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4843325075121452187, guid: ebbf5878de3e1b940a66907394061b9b, type: 3}
+      propertyPath: attackRange
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7628073687098200968, guid: ebbf5878de3e1b940a66907394061b9b, type: 3}
       propertyPath: m_Name
       value: SpreadShotEnemy Variant
