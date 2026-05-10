@@ -8,6 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 322217254967425674, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.762
+      objectReference: {fileID: 0}
+    - target: {fileID: 322217254967425674, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097402545336170479, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.737
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097402545336170479, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.858
+      objectReference: {fileID: 0}
     - target: {fileID: 2911904652506325978, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: damage
       value: 2
@@ -23,6 +39,14 @@ PrefabInstance:
     - target: {fileID: 3888403277818999417, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: dropThings
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4067518753490305902, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.771
+      objectReference: {fileID: 0}
+    - target: {fileID: 4067518753490305902, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.784
       objectReference: {fileID: 0}
     - target: {fileID: 4634137441563940167, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: m_FlipX
@@ -44,13 +68,29 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.058490515
       objectReference: {fileID: 0}
+    - target: {fileID: 5483315160362763012, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.831367
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483315160362763012, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.76931643
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121253588797112947, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -2.114567
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121253588797112947, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.751097
+      objectReference: {fileID: 0}
     - target: {fileID: 9121253588797112947, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3889122
+      value: 8.81
       objectReference: {fileID: 0}
     - target: {fileID: 9121253588797112947, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1774125
+      value: -2.97
       objectReference: {fileID: 0}
     - target: {fileID: 9121253588797112947, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -92,9 +132,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3278055784048874721, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8790463831593449333}
-    - targetCorrespondingSourceObject: {fileID: 3278055784048874721, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -4204322282279735259}
   m_SourcePrefab: {fileID: 100100000, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
 --- !u!1 &6422476812726100450 stripped
 GameObject:
@@ -119,7 +156,7 @@ MonoBehaviour:
   attackInput: 323
   attackOffset: {fileID: 8080715705215389577}
   myAnim: {fileID: 0}
-  projectile: {fileID: 9057735609865749947, guid: bc165fff2385e4a0096ae7dc25f890a5, type: 3}
+  projectile: {fileID: 114083354237110292, guid: 38d2c8b25c45745b58972d8573ad54ea, type: 3}
   projectileSpeed: 3
   liveTime: 10
   infiniteAmmo: 1
@@ -127,22 +164,6 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
---- !u!114 &-4204322282279735259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6422476812726100450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2572ef49e382c84a996908070eb7b52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlatformChaser
-  target: {fileID: 284586420907506207, guid: 01a6228d65f75be479de39dfacba09a2, type: 3}
-  agroDistance: 10
-  stoppingDistance: 0.1
-  minimumDistance: 0.05
 --- !u!4 &8080715705215389577 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 322217254967425674, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
