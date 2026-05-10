@@ -868,7 +868,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "It is 2116, Technology has barely advanced since the 2050's and overpopulation
+    has not been a major problem. \nThe Planet is taken control by the Underground
+    Order, a faction which grows stronger everyday.\nThe time is now to stop the
+    Underground Order and escape to the surface... "
 --- !u!222 &2091866870
 CanvasRenderer:
   m_ObjectHideFlags: 0
