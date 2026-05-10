@@ -59,8 +59,19 @@ public class ShootAllDirection : Attack
         }
         else // use player position to aim
         {
-            // direction to player
-            direction = (playerRef.transform.position - attackOffset.transform.position);
+            Collider2D playerCollider = playerRef.GetComponent<Collider2D>();
+
+            if (playerCollider)
+            {
+                direction = ((Vector2)playerCollider.bounds.center
+                            - (Vector2)attackOffset.transform.position);
+            }
+            else
+            {
+                direction = ((Vector2)playerRef.transform.position
+                            - (Vector2)attackOffset.transform.position);
+            }
+
             direction.Normalize();
         }
 
