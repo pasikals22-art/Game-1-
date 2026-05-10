@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4945412829698836329
+--- !u!1001 &2853002890646110367
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 546994643561149426, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: attackRange
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 546994643561149426, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: attackSpeed
@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3278055784048874721, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: m_Name
-      value: FastShoot
+      value: FastFire
       objectReference: {fileID: 0}
     - target: {fileID: 3888403277818999417, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: maxHealth
@@ -58,11 +58,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9121253588797112947, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.52
+      value: 57.67
       objectReference: {fileID: 0}
     - target: {fileID: 9121253588797112947, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.93
+      value: -1.2464767
       objectReference: {fileID: 0}
     - target: {fileID: 9121253588797112947, guid: df4e6054a6b5dc9479a2f3542e9e4be3, type: 3}
       propertyPath: m_LocalPosition.z
