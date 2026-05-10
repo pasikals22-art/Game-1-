@@ -25,6 +25,8 @@ public class ShootAllDirection : Attack
 
     protected ObjectPool projectilePool;
 
+    Transform playerAimPoint;
+
     [Header("Spreadshoot: Shoots direction character is facing.")]
     public bool spreadshot = false;
 
@@ -49,6 +51,16 @@ public class ShootAllDirection : Attack
 
         attacking = true;
 
+        if (playerAimPoint == null && playerRef != null)
+        {
+            Transform found = playerRef.transform.Find("AimPoint");
+
+            if (found != null)
+            {
+                playerAimPoint = found;
+            }
+        }
+
         // get angle
         Vector2 direction;
         if (!isEnemy) // use mouse position to aim
@@ -59,20 +71,16 @@ public class ShootAllDirection : Attack
         }
         else // use player position to aim
         {
-            Collider2D playerCollider = playerRef.GetComponent<Collider2D>();
-
-            if (playerCollider)
+            if (playerAimPoint != null)
             {
-                direction = ((Vector2)playerCollider.bounds.center
-                            - (Vector2)attackOffset.transform.position);
+                direction = ((Vector2)playerAimPoint.position
+                            - (Vector2)attackOffset.position).normalized;
             }
             else
             {
                 direction = ((Vector2)playerRef.transform.position
-                            - (Vector2)attackOffset.transform.position);
+                            - (Vector2)attackOffset.position).normalized;
             }
-
-            direction.Normalize();
         }
 
         float rotation = Vector2.Angle(Vector2.right, direction);
