@@ -541,7 +541,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1650827455744497157, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
       propertyPath: MainMenuSceneName
-      value: 
+      value: Title Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650827455744497157, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
+      propertyPath: currentSceneIndex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5605006677586594130, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
       propertyPath: m_Name
@@ -727,7 +731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8659787573011197751, guid: 07777f442df25e24ba4af55ac71db9eb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 342.99997
+      value: 395.5
       objectReference: {fileID: 0}
     - target: {fileID: 8659787573011197751, guid: 07777f442df25e24ba4af55ac71db9eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5854,7 +5858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8659787573011197751, guid: 07777f442df25e24ba4af55ac71db9eb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 113.7
+      value: 166.1
       objectReference: {fileID: 0}
     - target: {fileID: 8659787573011197751, guid: 07777f442df25e24ba4af55ac71db9eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6631,7 +6635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 266.8, y: 121.5}
+  m_AnchoredPosition: {x: 279.9, y: 174.8}
   m_SizeDelta: {x: 253.409, y: 42.3394}
   m_Pivot: {x: 0.4294214, y: 0.5}
 --- !u!114 &1821947971
