@@ -2686,7 +2686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9cfba8dc193f435e8f24c88a4f5707a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDeathGoal
-  DeathGoal: 0
+  DeathGoal: 13
   EnemyDeathCount: 0
   enemyKillCountUI: {fileID: 27573031}
   playSound: 0
