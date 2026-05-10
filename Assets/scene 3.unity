@@ -301,9 +301,9 @@ MonoBehaviour:
   playSound: 0
   sound: {fileID: 0}
   volume: 1
-  changeScene: 0
+  changeScene: 1
   sceneChangeDelay: 0
-  sceneName: 
+  sceneName: Win
   enableAnObject: 1
   TargetObject: {fileID: 0}
   DisableAtStart: 1
