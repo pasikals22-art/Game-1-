@@ -5520,6 +5520,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrier
       objectReference: {fileID: 0}
+    - target: {fileID: 5822568054915117674, guid: 7a54437df62750e4599a465a64fbc89a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.21511841
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822568054915117674, guid: 7a54437df62750e4599a465a64fbc89a, type: 3}
+      propertyPath: m_Offset.x
+      value: 35.86815
+      objectReference: {fileID: 0}
     - target: {fileID: 7057283224396000206, guid: 7a54437df62750e4599a465a64fbc89a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 103.28
