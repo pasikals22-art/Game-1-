@@ -191,8 +191,8 @@ MonoBehaviour:
   immunityTime: 0.2
   immunityVisible: 1
   immortal: 0
-  sound: {fileID: 0}
-  soundVolume: 1
+  sound: {fileID: 8300000, guid: 16b46e7047a6048058c0d23ec23fc8b3, type: 3}
+  soundVolume: 0.1
   dropThings: 0
   healthBar: 0
   timeToDie: 0

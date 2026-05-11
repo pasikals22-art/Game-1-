@@ -537,8 +537,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -139.8598, y: -234.2}
+  m_AnchoredPosition: {x: 0, y: -21.3}
+  m_SizeDelta: {x: -223.7219, y: -367.1095}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505182134
 MonoBehaviour:
@@ -612,7 +612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3789062, y: 0}
+  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
   m_SizeDelta: {x: 514.1278, y: 146.5195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576563258
@@ -725,6 +725,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77dce041ccc044279824bea0b3aef92e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &946008430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 733708332, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: soundtrack.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 733708332, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: soundtrack.Array.data[0].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c027fa0ad7465e845ac24d1f72999c98, type: 3}
+    - target: {fileID: 733708333, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 625.6287
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 604.4088
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586127412356374515, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_Name
+      value: Audio Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
 --- !u!1 &1003366225
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -952,8 +1021,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 111.11591}
-  m_SizeDelta: {x: -283.5776, y: -283.5777}
+  m_AnchoredPosition: {x: 0, y: 121.5}
+  m_SizeDelta: {x: -429.1145, y: -330.4696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519591692
 MonoBehaviour:
@@ -1076,3 +1145,4 @@ SceneRoots:
   - {fileID: 1003366229}
   - {fileID: 477691217}
   - {fileID: 641185509}
+  - {fileID: 946008430}

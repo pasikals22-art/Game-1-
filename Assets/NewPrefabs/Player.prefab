@@ -234,8 +234,8 @@ MonoBehaviour:
   jumpHeight: 2
   upGravityScale: 2
   downGravityScale: 2.5
-  jumpSound: {fileID: 0}
-  soundVolume: 1
+  jumpSound: {fileID: 8300000, guid: 9768272eeb5d56149a9f03abbdb03b07, type: 3}
+  soundVolume: 0.125
   numberOfJumps: 1
   secondaryJumpHeightMultiplier: 0.5
   leftDetectorPoint: {fileID: 2792079605829088027}
@@ -323,8 +323,8 @@ MonoBehaviour:
   immunityTime: 0.2
   immunityVisible: 1
   immortal: 0
-  sound: {fileID: 0}
-  soundVolume: 1
+  sound: {fileID: 8300000, guid: c8b60bd9a6f3d2443a36996cea78e223, type: 3}
+  soundVolume: 0.5
   healthUI: {fileID: 0}
   startsFullHealth: 1
 --- !u!114 &4190360509449348113
